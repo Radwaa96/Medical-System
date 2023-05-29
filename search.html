@@ -1,0 +1,495 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="btnUp" class="btn rounded-top-circle">
+      <i class="fa-solid fa-arrow-up text-white"></i>
+    </div>
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div
+          id="headerNav"
+          class="header py-0 fw-bold d-flex justify-content-between align-items-center border-bottom py-1 fixed-top"
+        >
+          <div class="header1 mx-3 d-flex justify-content-between w-25">
+            <a><i class="fa-solid fa-phone"></i> +012 345 6789</a>
+            |
+            <a><i class="fa-solid fa-envelope"></i> info@example.com</a>
+          </div>
+          <div class="header2 mx-5">
+            <i class="fa-brands fa-facebook-f mx-1"></i>
+            <i class="fa-brands fa-twitter mx-1"></i>
+            <i class="fa-brands fa-linkedin-in mx-1"></i>
+            <i class="fa-brands fa-instagram mx-1"></i>
+            <i class="fa-brands fa-youtube mx-1"></i>
+          </div>
+        </div>
+        <div class="container-fluid mt-4">
+          <i class="fa-solid fa-house-medical fa-2x text-main mx-1 mb-1"></i>
+          <a class="navbar-brand fw-bolder"> MEDINOVA</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2">
+              <li class="nav-item">
+                <a
+                  class="nav-link active m-auto text-main text-dark"
+                  aria-current="page"
+                  href=""
+                  id="homeLink"
+                  >Home</a
+                >
+                <div class="lineH"></div>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-dark"
+                  aria-current="page"
+                  href="#About"
+                  >About</a
+                >
+                <div class="line"></div>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-dark"
+                  aria-current="page"
+                  href="#Service"
+                  >Service</a
+                >
+                <div class="line"></div>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-dark"
+                  aria-current="page"
+                  href="#Pricing"
+                  >Pricing
+                </a>
+                <div class="line"></div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-dark"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" id="blog" href="#">Blog Grid</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Blog Detail</a></li>
+                  <li><a class="dropdown-item" href="#">The Team</a></li>
+                  <li><a class="dropdown-item" href="#">Testimonial</a></li>
+                  <li><a class="dropdown-item" href="#">Apointment</a></li>
+                  <li><a class="dropdown-item" href="#">Search</a></li>
+                </ul>
+                <div class="line"></div>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-dark"
+                  aria-current="page"
+                  id="contactLink"
+                  href=""
+                  >Contact
+                </a>
+                <div class="line"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <div id="search">
+      <div class="py-5 mt-5">
+        <div class="service-header py-5 w-50 m-auto text-center">
+          <h6 class="text-main pb-0 mb-0 fw-bold">FIND A DOCTOR</h6>
+          <div class="lineAbout m-auto"></div>
+          <h1 class="w-75 m-auto mt-2 dark-color pb-4">
+            Find A Healthcare Professionals
+          </h1>
+          <div class="w-75 m-auto">
+            <p class="dark-color fs-5">
+              Duo ipsum erat stet dolor sea ut nonumy tempor. Tempor duo lorem
+              eos sit sed ipsum takimata ipsum sit est. Ipsum ea voluptua ipsum
+              sit justo
+            </p>
+          </div>
+          <div class="input-group d-flex py-4">
+            <select name="Department" id="Department" class="form-select w-25">
+              <option value="Department1">Department1</option>
+              <option value="Department2">Department2</option>
+              <option value="Department3">Department3</option>
+              <option value="Department4">Department4</option>
+            </select>
+            <input
+              type="text"
+              placeholder="Keyword"
+              class="form-control w-50 py-3"
+            />
+            <span
+              class="btn search d-flex align-items-center text-white bg-dark-color px-5 fw-bold"
+            >
+              Search
+            </span>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-md-6">
+              <div class="item d-flex rounded-3 mx-3 bg-lightt">
+                <div class="img-slider">
+                  <img
+                    src="img/team-1.jpg"
+                    class="w-100 h-100 rounded-start-3 object-fit-cover"
+                    alt=""
+                  />
+                </div>
+
+                <div class="text-slider p-4">
+                  <h4 class="dark-color fw-bold">Doctor Name</h4>
+                  <h6 class="text-main">Lorem, ipsum.</h6>
+                  <br />
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    atque ab vel?
+                  </p>
+                  <br />
+                  <hr />
+                  <div class="slider2-Icons d-flex justify-content-center py-2">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="item d-flex rounded-3 mx-3 bg-lightt">
+                <div class="img-slider">
+                  <img
+                    src="img/team-2.jpg"
+                    class="w-100 h-100 rounded-start-3 object-fit-cover"
+                    alt=""
+                  />
+                </div>
+
+                <div class="text-slider p-4">
+                  <h4 class="dark-color fw-bold">Doctor Name</h4>
+                  <h6 class="text-main">Lorem, ipsum.</h6>
+                  <br />
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    atque ab vel?
+                  </p>
+                  <br />
+                  <hr />
+                  <div class="slider2-Icons d-flex justify-content-center py-2">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="item d-flex rounded-3 mx-3 bg-lightt">
+                <div class="img-slider">
+                  <img
+                    src="img/team-3.jpg"
+                    class="w-100 h-100 rounded-start-3 object-fit-cover"
+                    alt=""
+                  />
+                </div>
+
+                <div class="text-slider p-4">
+                  <h4 class="dark-color fw-bold">Doctor Name</h4>
+                  <h6 class="text-main">Lorem, ipsum.</h6>
+                  <br />
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    atque ab vel?
+                  </p>
+                  <br />
+                  <hr />
+                  <div class="slider2-Icons d-flex justify-content-center py-2">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="item d-flex rounded-3 mx-3 bg-lightt">
+                <div class="img-slider">
+                  <img
+                    src="img/team-2.jpg"
+                    class="w-100 h-100 rounded-start-3 object-fit-cover"
+                    alt=""
+                  />
+                </div>
+
+                <div class="text-slider p-4">
+                  <h4 class="dark-color fw-bold">Doctor Name</h4>
+                  <h6 class="text-main">Lorem, ipsum.</h6>
+                  <br />
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    atque ab vel?
+                  </p>
+                  <br />
+                  <hr />
+                  <div class="slider2-Icons d-flex justify-content-center py-2">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="item d-flex rounded-3 mx-3 bg-lightt">
+                <div class="img-slider">
+                  <img
+                    src="img/team-2.jpg"
+                    class="w-100 h-100 rounded-start-3 object-fit-cover"
+                    alt=""
+                  />
+                </div>
+
+                <div class="text-slider p-4">
+                  <h4 class="dark-color fw-bold">Doctor Name</h4>
+                  <h6 class="text-main">Lorem, ipsum.</h6>
+                  <br />
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    atque ab vel?
+                  </p>
+                  <br />
+                  <hr />
+                  <div class="slider2-Icons d-flex justify-content-center py-2">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="item d-flex rounded-3 mx-3 bg-lightt">
+                <div class="img-slider">
+                  <img
+                    src="img/team-1.jpg"
+                    class="w-100 h-100 rounded-start-3 object-fit-cover"
+                    alt=""
+                  />
+                </div>
+
+                <div class="text-slider p-4">
+                  <h4 class="dark-color fw-bold">Doctor Name</h4>
+                  <h6 class="text-main">Lorem, ipsum.</h6>
+                  <br />
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    atque ab vel?
+                  </p>
+                  <br />
+                  <hr />
+                  <div class="slider2-Icons d-flex justify-content-center py-2">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center pt-5 w-100">
+            <button class="btn readMoreBtn bg-main text-white fw-bold px-5 py-3 m-auto">Load More</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="footer">
+      <div class="pt-2 pb-3 bg-dark-color">
+        <div class="container">
+          <div class="row gx-5">
+            <div class="col-md-3">
+              <div class="footer py-5">
+                <h5 class="text-main fw-bold mb-0">GET IN TOUCH</h5>
+                <div class="linefooter ms-0 m-auto"></div>
+                <p class="py-4">
+                  No dolore ipsum accusam no lorem. Invidunt sed clita kasd
+                  clita et et dolor sed dolor
+                </p>
+                <p>
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span>123 Street, New York, USA</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-envelope"></i
+                  ><span>info@example.com</span>
+                </p>
+                <p>
+                  <i class="fa-solid fa-phone"></i> <span>+012 345 67890</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="footer1 py-5">
+                <h5 class="text-main fw-bold mb-0">QUICK LINKS</h5>
+                <div class="linefooter2 ms-0 m-auto"></div>
+                <ul class="py-3 text-decoration-none text-white list-unstyled">
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i> <a href="">Home</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href=""> About Us </a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="">Our Services </a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="">Meet The Team </a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="">Latest Blog </a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="">Contact Us </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="footer1 py-5">
+                <h5 class="text-main fw-bold mb-0">POPULAR LINKS</h5>
+                <div class="linefooter3 ms-0 m-auto"></div>
+                <ul class="py-3 text-decoration-none text-white list-unstyled">
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i> <a href="">Home</a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href=""> About Us </a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="">Our Services </a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="">Meet The Team </a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="">Latest Blog </a>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="">Contact Us </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="footer py-5">
+                <h5 class="text-main fw-bold mb-0">NEWSLETTER</h5>
+                <div class="linefooter2 ms-0 m-auto"></div>
+                <div class="input-group py-3">
+                  <input
+                    type="text"
+                    class="form-control p-3 border-0"
+                    placeholder="Your Email Address"
+                  />
+                  <span
+                    class="input-group-text bg-main text-white fw-bold border-0"
+                    >Sign Up</span
+                  >
+                </div>
+                <h6 class="text-main fw-bold py-3">FOLLOW US</h6>
+                <div
+                  class="footerIcons d-flex align-items-center justify-content-start"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter mx-1"></i>
+                  <i class="fa-brands fa-linkedin-in mx-1"></i>
+                  <i class="fa-brands fa-instagram mx-1"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div
+          class="container mb-0 pb-0 d-flex justify-content-between align-items-center"
+        >
+          <p>
+            © <span class="text-main"> Your Site Name</span>. All Rights
+            Reserved.
+          </p>
+          <p>Designed by<span class="text-main"> HTML Codex</span></p>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

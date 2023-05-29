@@ -1,0 +1,591 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Tajawal&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #13c5dd;
+  --dark-color: #1d2a4d;
+  --light-color: #848e9f;
+  --text-small: 13px;
+  --bg-light: #eff5f9;
+}
+
+.bg-lightt {
+  background-color: var(--bg-light);
+}
+.text-s {
+  font-size: var(--text-small);
+}
+
+.bg-main {
+  background-color: var(--main-color);
+}
+
+.bg-dark-color {
+  background-color: var(--dark-color);
+}
+.dark-color {
+  color: var(--dark-color) !important;
+}
+.light-color {
+  color: var(--light-color);
+}
+
+.text-main {
+  color: var(--main-color) !important;
+}
+
+p {
+  color: var(--light-color) !important;
+}
+
+#btnUp {
+  position: fixed;
+  right: 15px;
+  bottom: 0px;
+  font-size: 20px !important;
+  padding: 15px 13px 10px !important;
+  font-weight: 100 !important;
+}
+
+.header2 i {
+  margin: 0px 5px !important;
+}
+
+i {
+  cursor: pointer !important;
+}
+
+.header1 a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header {
+  color: #848e9f;
+}
+
+.navbar-brand {
+  font-family: "Tajawal", sans-serif !important;
+  font-size: 35px !important;
+  font-weight: 900 !important;
+  cursor: pointer;
+}
+
+.navbar-nav {
+  font-size: larger;
+  font-weight: 500;
+  padding: 0px 120px;
+}
+
+.nav-item {
+  position: relative;
+  transition: 0.5s;
+}
+
+.line {
+  height: 5px;
+  width: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -50%;
+  right: 50%;
+  left: 48%;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.nav-item:hover .line {
+  transition: 0.5s;
+  right: 10;
+  left: 10;
+  opacity: 1;
+  width: 50px;
+}
+
+.nav-item:hover a {
+  color: #13c5dd !important;
+  transition: 0.5s;
+}
+
+.lineH {
+  left: 10px;
+  width: 50px;
+  bottom: -50%;
+
+  height: 5px;
+  background-color: var(--main-color);
+  position: absolute;
+}
+
+/* ==================================loading================================== */
+ #loading {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left:0 ;
+  background-color: #222;
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loading i {
+  font-size: 33px;
+  color: white;
+} 
+
+/* ==================================boxColor========================================== */
+#sideBar {
+  position: fixed;
+  left: 0;
+  top: 30%;
+  z-index: 9999;
+  
+  
+}
+
+.boxColor {
+  background-color:#ccc;
+
+}
+
+.colorItem {
+  background-color: #354f8e;
+  width: 40px !important;
+  height: 40px !important;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* ======================================Nav============================================ */
+.navbar-brand , .container-fluid  i{
+color: var(--main-color);
+}
+
+/* =====================================Home============================================== */
+.home {
+  background-image: url(../img/hero.jpg);
+  background-position-x: right;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.LineTitle {
+  width: 190px;
+  height: 5px;
+  background-color: rgba(211, 211, 211, 0.568);
+  margin: 0px 15px 20px;
+  border-radius: 5px;
+}
+.home h5{
+  color: var(--main-color);
+}
+
+.home h1 {
+  font-size: 90px;
+  color: white;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.home .bt2 {
+  background-color: none;
+  border: 1px solid white;
+  margin: 10px;
+  color: white !important ;
+}
+
+.home .bt2:hover {
+  background-color: white;
+  color: black !important ;
+  transition: 0.7s;
+}
+
+.home .bt1 {
+  border: 5px solid #eff5f9 !important ;
+  margin: 10px;
+}
+
+/* ====================================about============================================ */
+
+.lineAbout {
+  height: 5px;
+  background-color: rgba(211, 211, 211, 0.568);
+  width: 100px;
+  border-radius: 5px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.aboutText h5{
+  color: var(--main-color);
+}
+
+.aboutTitle{
+  color: var(--main-color);
+}
+
+.aboutText h1,
+.service-header h1,
+.appointment-header h1 {
+  font-size: 65px !important;
+  font-family: "Bebas Neue", sans-serif !important;
+  color: var(--dark-color) !important;
+  margin-top: 28px;
+  font-weight: 550;
+}
+
+.about-icons i {
+  color: var(--main-color);
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+/* =============================================service================================================== */
+.service-icon {
+  border-radius: 50%;
+  padding: 40px 2px;
+  transform: rotate(75deg);
+  width: 40%;
+}
+
+.service-icon i {
+  font-size: 30px !important;
+  color: white !important;
+  transform: rotate(-75deg);
+}
+
+.arrow {
+  color: white;
+  transform: translateY(250%);
+  opacity: 0;
+  transition: 1s;
+}
+
+.service-text:hover .arrow {
+  opacity: 1;
+  transform: translateY(120%);
+}
+
+/* =====================================.appointment====================================== */
+.Appoint-btn .bt1:hover {
+  transition: 0.5s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: var(--dark-color) !important;
+  color: white !important;
+}
+
+.Appoint-btn .bt2 {
+  border: 1px solid var(--dark-color);
+  margin: 0px 10px;
+}
+
+.Appoint-btn .bt2:hover {
+  background-color: var(--dark-color) !important;
+  color: white !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.5s;
+}
+
+.book:hover {
+  color: black !important;
+  background-color: var(--main-color) !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.5s;
+}
+
+form input,
+form select {
+  color: var(--light-color) !important;
+  background-color: var(--bg-light) !important;
+  border: none;
+  padding: 5px;
+}
+
+/* ===================================slider1========================================== */
+.sliderBtn:hover {
+  color: black !important;
+  background-color: var(--main-color) !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.5s;
+}
+
+.slider {
+  transform: translateY(-60%);
+}
+
+.owl-carousel button:not(:disabled) {
+  all: unset;
+  background-color: var(--main-color);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.owl-carousel button:hover {
+  color: black !important;
+  background-color: var(--main-color) !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.5s;
+}
+
+#Pricing .container {
+  margin-top: 200px;
+  /* background-color: red; */
+}
+
+.card-img {
+  position: relative;
+}
+
+.layer {
+  background-color: rgba(29, 42, 77, 0.8);
+  position: absolute;
+  inset: 0;
+  color: white;
+  font-weight: bold;
+  font-size: larger;
+}
+
+/* ====================================Slider2================================================== */
+.slider2-Icons i {
+  padding: 15px;
+  margin: 0px 5px;
+  border-radius: 50%;
+  /* background-color: var(--main-color); */
+  color: white !important;
+  font-size: larger;
+}
+
+.slider2-Icons i:hover,
+.contactt button:hover,
+.leadBtn:hover ,
+#categories span:hover,
+.readMoreBtn:hover{
+  color: black !important;
+  background-color: var(--main-color) !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.5s;
+}
+
+.search:hover {
+  background-color: var(--dark-color) !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.5s;
+}
+
+/* ==========================carsoul===================================== */
+.carousel-img {
+  width: 160px;
+  margin: auto;
+}
+
+.carousel-icon {
+  transform: translate(120%, 40%) !important;
+}
+
+.carousel-indicators {
+  display: flex;
+  align-items: center;
+  transition: 1s;
+}
+.carousel-indicators button.active {
+  all: unset;
+  color: #13c5dd ;
+  background-color: #13c5dd !important;
+  border-radius: 50%;
+  width: 30px !important;
+  height: 30px !important;
+  transition: 0.7s;
+}
+
+.carousel-indicators [data-bs-target] {
+  all: unset;
+  background-color: white !important;
+  border: 3px solid var(--main-color) !important;
+  margin: 0px 10px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* ==================================blog===================================== */
+
+.blogFooter1 img {
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.blogImg img {
+  cursor: pointer;
+  transition: 1s;
+}
+
+.blogImg img:hover {
+  transform: scale(1.1);
+}
+.blogText h4 {
+  cursor: pointer;
+}
+.blogText h4:hover {
+  color: var(--main-color) !important;
+}
+
+.quoma {
+  color: var(--main-color);
+}
+
+/* ===========================footer====================================== */
+.linefooter {
+  height: 5px;
+  width: 140px;
+  background-color: #354f8e;
+}
+.linefooter2 {
+  height: 5px;
+  width: 125px;
+  background-color: #354f8e;
+}
+.footer h5 {
+  color: var(--main-color);
+}
+
+.linefooter3 {
+  height: 5px;
+  width: 155px;
+  background-color: #354f8e;
+}
+
+#footer p {
+  color: white !important;
+}
+
+.footer i {
+  color: var(--main-color);
+  margin-right: 7px;
+}
+
+.footer1 a {
+  text-decoration-line: none !important;
+  color: white !important;
+  font-size: large;
+}
+.footer1 i {
+  margin: 10px 0px;
+}
+
+.footerIcons i {
+  padding: 15px 17px;
+  font-size: large;
+  border-radius: 50%;
+  color: white !important;
+  transition: 0.5s;
+}
+
+.footerIcons i:hover {
+  color: black !important;
+}
+
+#footer hr {
+  color: #0e4de0 !important;
+  height: 2px;
+  font-size: large;
+}
+
+/* =======================================contact=============================== */
+
+.contactt {
+  transform: translateY(-60%);
+}
+
+/* =============================blogDetails========================================= */
+
+
+
+.userImg {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.lineBlog {
+  height: 5px;
+  background-color: rgba(211, 211, 211, 0.568);
+  width: 140px;
+  border-radius: 5px;
+}
+.userName {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.userName:hover {
+  color: #354f8e !important;
+}
+
+.replyBtn:hover {
+  background-color: #eff5f9 !important;
+  box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.lineBlog2 {
+  height: 5px;
+  background-color: white;
+  width: 190px;
+  border-radius: 5px;
+}
+
+.categories a {
+  font-weight: bold;
+  text-decoration: none !important;
+  color: var(--dark-color) !important;
+}
+
+.categories li {
+  padding: 7px;
+  font-size: larger;
+  background-color: var(--bg-light) !important;
+  border-radius: 10px;
+  margin: 10px 0px;
+}
+
+.categories a:hover {
+  color: var(--main-color) !important;
+}
+
+#categories span {
+cursor: pointer;
+}
+
+/* ============================slider2========================================== */
+.sajid-1 {
+  position: relative;
+}
+.sajid-1 .prev , .sajid-1 .next {
+font-size: 50px !important;
+/* color: white !important; */
+position: absolute;
+top: 40%;
+
+}
+h6 {
+  color: var(--main-color);
+}
+
+.sajid-1 i {
+  color: var(--main-color);
+}
+
+.sajid-1 .prev {
+  left: 15px ;
+}
+
+.sajid-1 .next{
+  right: 15px;
+}
